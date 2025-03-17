@@ -54,8 +54,6 @@ func FetchRandomCountry() (string, error) {
 
 // FetchTopSong retrieves the top song from Last.fm API
 func FetchTopSong(country string) (string, string, error) {
-	fmt.Printf("Trying to get top song for %s", country)
-
 	apiKey := "c725f1f4d058ffa793984e8d42db6b3b"
 	url := fmt.Sprintf("http://ws.audioscrobbler.com/2.0/?method=geo.gettoptracks&country=%s&api_key=%s&format=json", country, apiKey)
 
